@@ -12,7 +12,24 @@ addToTwelve([1, 12, 4, 7, 6]); // false
 addToTwelve([1]); // false
 ***********************************************************************/
 
-// your code here
+const addToTwelve = (numArray, i=0) =>{
+// base case:
+  if (numArray.length === i){
+  return false;
+  }
+  if (numArray[i] + numArray[i + 1] === 12){
+    return true;
+  }
+
+// recursive step:
+return addToTwelve(numArray, i = i +1 )
+
+}
+addToTwelve([1, 3, 4, 7, 5]); // true
+addToTwelve([1, 3, 4, 7, 6]); // false
+addToTwelve([1, 11, 4, 7, 6]); // true
+addToTwelve([1, 12, 4, 7, 6]); // false
+addToTwelve([1]); // false
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

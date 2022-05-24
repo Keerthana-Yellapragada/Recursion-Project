@@ -19,7 +19,7 @@ const reverse = (string, i=string.length-1, reversedString = "") => {
   return reversedString;
 
  }
- if (i >=0){
+ if (i >= 0){
  let slicedCharac = string[i]
 
  reversedString = reversedString + slicedCharac;
