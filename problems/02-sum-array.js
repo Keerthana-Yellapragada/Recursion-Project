@@ -18,6 +18,19 @@ const sumArray = (arr, i=0) => {
 }
 
 
+
+// function sumArray(nums){
+//   //base case
+//   if (!nums.length) return 0
+
+//     const last = nums.pop() // mutate array,hold onto last num
+//     const recursiveStep = sumArray(nums) //reinvoke function on what's left
+//     return last + recursiveStep
+// }
+
+
+
+
 console.log(sumArray([1, 2, 3])); //  6
 sumArray([0, 1, -3]); //  -2
 sumArray([1, 2, 3, 4, 5]); // 15

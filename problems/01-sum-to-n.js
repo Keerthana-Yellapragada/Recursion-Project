@@ -23,12 +23,31 @@ if (num < 0){
   return result;
 }
 
+// alternate way to solve:
+// // edgecase
+// if (num < 0) return null
+// if (num === 0) return 0
+// return num + sumToN(num-1)
 
 
-console.log(sumToN(5)) // returns 15
-console.log(sumToN(1))  // returns 1
-console.log(sumToN(9))  // returns 45
-sumToN(-8)  // returns null
+
+// another way to solve:
+// const sumToN = (num, sum = 0) => {
+//   //edge case
+//   if (num < 0) return null
+
+//   if (num === 0) return sum // base case
+
+//   // else if (num > 1) { // recursive case
+//   return sumToN(num - 1, sum + num) // recursive
+//   // }
+// }
+
+
+// console.log(sumToN(5)) // returns 15
+// console.log(sumToN(1))  // returns 1
+// console.log(sumToN(9)  // returns 45
+// sumToN(-8)  // returns null
 
 
 

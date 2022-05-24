@@ -13,8 +13,24 @@ iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
 
 
-// your code here
+const iceCreamShop = (flavors, favorite, i=0) => {
 
+  // base case
+  if (i === flavors.length){
+    debugger;
+    return false;
+  }
+  if (flavors[i]=== favorite){
+    debugger;
+    return true;
+  }
+    debugger;
+    return iceCreamShop(flavors, favorite, i= i+1);
+    // have to explicitly delcare parameter incrementation
+
+}
+
+iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea'); // true
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
