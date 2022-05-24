@@ -11,7 +11,17 @@ isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
 
 // your code here
+const isSorted = (arr,i=0)=>{
+if(arr.length === i){
+  return true;
+}
 
+if(arr[i+1]<arr[i]){
+return false;
+}
+
+return isSorted(arr,i=i+1)
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = isSorted;

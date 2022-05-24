@@ -17,7 +17,16 @@ factorial(5); // 120
 ***********************************************************************/
 
 // your code here
+  const factorial = (n,product=1)=>{
+if(n===1){
+  return product;
+}
+if(n>1){
+  product = product*n;
   
+}
+return factorial(n-1,product)
+  }
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = factorial;

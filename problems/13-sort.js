@@ -21,10 +21,42 @@ sort([0, 1, -3]); // [-3, 0, 1]
 sort([]); // []
 ***********************************************************************/
 
-function sort(nums, sorted = []) {
+function sort(nums,i=0, sorted = [],min=0) {
   // your code here
+// if(nums.length===0)return []
+if(nums.length===i){
+  return sorted;
 }
 
+if(nums[i]<min){
+  sorted.unshift(nums[i])
+}
+else if(nums[i]>0 && nums[i]>=min){
+min = nums[i]
+sorted.push(min)
+console.log(sorted)
+}
+return sort(nums,i+1,sorted,min)
+}
+// //[0, 1, -3]
+// const minValue = arr=>{
+// let min = 0;
+// let newArr=[];
+
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]<0){
+//     newArr.unshift(arr[i])
+//   }
+//   if(arr[i]>=min ){
+//     min = arr[i];
+//     newArr.push(min)
+//     //arr.shift()
+//   }
+ 
+// }
+// return newArr;
+// }
+console.log(sort([4,1,6,3,1,7]))
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sort;
