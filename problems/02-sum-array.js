@@ -18,7 +18,7 @@ const sumArray = (arr, i=0) => {
 }
 
 
-
+// ANOTHER WAY TO SOLVE:
 // function sumArray(nums){
 //   //base case
 //   if (!nums.length) return 0
@@ -28,8 +28,14 @@ const sumArray = (arr, i=0) => {
 //     return last + recursiveStep
 // }
 
-
-
+//ANOTHER WAY TO SOLVE:
+// const sumArray = nums =>{
+//   if (nums.length === 0) return 0
+//   const first = num[0]
+//   const recurse = sumArray(nums.slice[1])
+//   const tempSumm = first + recurse
+//   return tempSum
+// }
 
 console.log(sumArray([1, 2, 3])); //  6
 sumArray([0, 1, -3]); //  -2
