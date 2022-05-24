@@ -30,6 +30,17 @@ const iceCreamShop = (flavors, favorite, i=0) => {
 
 }
 
+// const iceCreamShop = (falvors, favorite) => {
+// if (!flavors.length) return false
+// const current = flavors.pop()
+// if(favorite === current) return true
+// iceCreamShop(flavors, favorite)
+// }
+
+
+
+
+
 iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea'); // true
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

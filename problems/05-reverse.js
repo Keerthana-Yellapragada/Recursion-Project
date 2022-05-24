@@ -11,9 +11,25 @@ reverse("q"); // "q"
 reverse("id"); // "di"
 reverse(""); // ""
 ***********************************************************************/
+const reverse = (string, i=string.length-1, reversedString = "") => {
 
-// your code here
+  //base case
+ if (i < 0 ) {
+  // console.log(reversedString)
+  return reversedString;
 
+ }
+ if (i >=0){
+ let slicedCharac = string[i]
+
+ reversedString = reversedString + slicedCharac;
+  // console.log(reversedString)
+  return reverse(string, i = i - 1,reversedString);
+}
+
+}
+
+console.log(reverse("house")); // "esuoh"
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;
