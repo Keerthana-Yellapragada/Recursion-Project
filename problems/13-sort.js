@@ -52,7 +52,7 @@ return sort(nums,i+1,sorted,min)
 //     newArr.push(min)
 //     //arr.shift()
 //   }
- 
+
 // }
 // return newArr;
 // }

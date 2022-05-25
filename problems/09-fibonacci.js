@@ -18,57 +18,97 @@ fibonacci(3); // 2
 fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
-//0, 1, 1, 2, 3, 5, 8, etc....
-// your code here
-const fibonacci = (n,i=2,currentFibNum)=>{
-//   currentFibNum = 1;
+// //0, 1, 1, 2, 3, 5, 8, etc....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // your code here
+// const fibonacci = (n,i=2,currentFibNum)=>{
+// //   currentFibNum = 1;
+// //   if(i===n){
+// //     return newArr[i]
+// //   }
+// // if(i<=n){
+
+// // if(n=2)return 1;
+// // if(i>2){
+// //   currentFibNum =(n-1)+(n-2)
+// //   console.log(currentFibNum)
+// //   newArr.push(currentFibNum)
+// //   console.log(newArr)
+// //   return fibonacci  (n,i=i+1,currentFibNum,newArr)
+// // }
+
+
+// // }
+// if(i<2)return 1;
+
+// if(i>=2){
 //   if(i===n){
-//     return newArr[i]
+//     return currentFibNum
 //   }
-// if(i<=n){
- 
-// if(n=2)return 1;
-// if(i>2){
-//   currentFibNum =(n-1)+(n-2)
-//   console.log(currentFibNum)
-//   newArr.push(currentFibNum)
-//   console.log(newArr)
-//   return fibonacci  (n,i=i+1,currentFibNum,newArr)
+//   currentFibNum = (n-2)+(n-1);
+//   return fibonacci (n,i=i+1,currentFibNum)
 // }
 
-
 // }
-if(i<2)return 1;
-
-if(i>=2){
-  if(i===n){
-    return currentFibNum
-  }
-  currentFibNum = (n-2)+(n-1);
-  return fibonacci (n,i=i+1,currentFibNum)
-}
-
-}
-// const fibonacciSequence=(num)=>{
-//   let newArray=[]
-//   let sum = 0
-//   if(num>1){
-//   newArray.push(1,1)
-//   }
-//     if(num===1){
-//     newArray.push(1)
-//     }
-//     for(let i=2;i<num;i++){
-//      sum = newArray[i-1]+newArray[i-2]
-//     newArray.push(sum)
-//     }
-//   return newArray
-//   }
-console.log(fibonacci(4)) //2
+// // const fibonacciSequence=(num)=>{
+// //   let newArray=[]
+// //   let sum = 0
+// //   if(num>1){
+// //   newArray.push(1,1)
+// //   }
+// //     if(num===1){
+// //     newArray.push(1)
+// //     }
+// //     for(let i=2;i<num;i++){
+// //      sum = newArray[i-1]+newArray[i-2]
+// //     newArray.push(sum)
+// //     }
+// //   return newArray
+// //   }
+// console.log(fibonacci(4)) //2
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = fibonacci;
 } catch (e) {
   module.exports = null;
 }
-  
